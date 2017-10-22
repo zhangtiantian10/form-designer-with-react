@@ -49,7 +49,7 @@ npm install
 ```
 依赖安装完成后，执行`npm start`将会在你机器的`8080`端口运行Web服务，访问`http://127.0.0.1:8080/src/main.html`查看效果。
 
-用任意编辑器打开clone下来的文件夹，在`src/js/main.js`中编写JavaScript代码，在`src/main.html`中编写HTML代码。完成功能后后，使用以下命令设置github远程仓库地址 (my_url代表你自己的新的github地址)
+用任意编辑器打开clone下来的文件夹，在`src/js/main.js`中编写JavaScript代码，在`src/main.html`中编写HTML代码。完成功能后，使用以下命令设置github远程仓库地址 (my_url代表你自己的新的github地址)
 ```
  git remote set-url origin my_url
 ```
