@@ -35,7 +35,7 @@
 * HTML 5
 * JavaScript ES6
 * React 16.0.0
-* React Dom 16.0.0
+* React DOM 16.0.0
 * jQuery UI 1.12.1
 
 ## 开始
