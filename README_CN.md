@@ -20,6 +20,10 @@
 点击”编辑“按钮，返回编辑模式，显示”添加“和”删除“按钮。
 
 ## 挑战
+* 理解声明式编程与指令式编程的区别
+* 合理地划分 Component
+* 理解 State 和 Props 的区别
+* 理解事件传递机制
 * 如何删除特定的表单元素
 * 如何在 React 中使用 jQuery UI
 
@@ -35,7 +39,7 @@
 * HTML 5
 * JavaScript ES6
 * React 16.0.0
-* React Dom 16.0.0
+* React DOM 16.0.0
 * jQuery UI 1.12.1
 
 ## 开始
@@ -49,7 +53,7 @@ npm install
 ```
 依赖安装完成后，执行`npm start`将会在你机器的`8080`端口运行Web服务，访问`http://127.0.0.1:8080/src/main.html`查看效果。
 
-用任意编辑器打开clone下来的文件夹，在`src/js/main.js`中编写JavaScript代码，在`src/main.html`中编写HTML代码。完成功能后后，使用以下命令设置github远程仓库地址 (my_url代表你自己的新的github地址)
+用任意编辑器打开clone下来的文件夹，在`src/js/main.js`中编写JavaScript代码，在`src/main.html`中编写HTML代码。完成功能后，使用以下命令设置github远程仓库地址 (my_url代表你自己的新的github地址)
 ```
  git remote set-url origin my_url
 ```
