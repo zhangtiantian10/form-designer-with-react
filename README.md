@@ -1,47 +1,54 @@
-# Form Designer with React
-## Business Requirements:
+# Develop a Form Designer with React
+## Business Requirement:
 You need to write a form designer, which has these features:
-* Add a field
-* Select field type
+* Select field type and add a field
 * Remove field
 * Preview
 
-### Add a field
-There should have an 'Add' button on the page when you click on it, it pops a dialog up for choosing field type. After you chose a field type, the dialog dismissed and a new field with the type you choose added in the form.
+### Select field type and add a field
+There should have an 'Add' button on the page. When you click on it, it will pop up a dialog for choosing the field type.
 
-### Select field type
-In the 'Choose Type' dialog, there are two types of field, they are text and date, you can choose your favorite type and click 'Submit' button to confirm it, or click 'Cancel' to cancel it.
+![](./mockups/1.jpg)
+
+In the 'Choose Type' dialog, there are two types of field: Text and Date. You can choose your favarite type and click 'Add' button to add it on the design form or click 'Close' to close this dialog.
+
+![](./mockups/2.jpg)
+
+After you add a field type, the dialog will keep opening so that you can continue to choose and add more fields to the form.
 
 ### Remove field
-There should have a 'Remove' button on the right of each field when you click it, the field got removed.
+There should have a 'Remove' button on the right of each field. When you click it, the field will be removed from the form.
 
 ### Preview
-There should have a 'Preview' button on the page, click it, it changes to 'Edit' so we can toggle modes between editor and previewer. In the previewer mode, you can neither add a new field nor remove a field.
+There should have a 'Preview' button on the page. When you click it, the button caption will change to 'Edit' so we can toggle between edit mode and previewmode. In the preview mode, you can either add a new field or remove a field.
+
+![](./mockups/3.jpg)
 
 ## Practice Challenges:
-* Understanding the difference between declarative and imperative programming
-* Designing the structure of components appropriately
-* Understanding the difference between `state` and `props`
-* Understanding how does event work in React
-* How to remove specific field
-* How to use jQuery UI dialog widget with React
+* Understand the difference between declarative and imperative programming
+* Design the structure of components appropriately
+* Understand the difference between `state` and `props`
+* Understand how the 'event' work in React
+* Understand the concept of `Virtual DOM` and apply it
+* Lean how to remove specific field
+* Lean how to use jQuery UI dialog widget with React
 
 ## Practice Requirements:
-* Split tasks in appropriate size and commit code after completing each task
-* Commit frequently with readable commit messages
+* Do tasking and break tasks in appropriate smallunits and commit code after completing each task
+* Commit frequently with readable comment
 * Coding with shortcuts
 
 ## Practice Output:
-Include HTML and JavaScript, CSS is optional.
+HTML and JavaScript (CSS is optional).
 
-## Environment require:
+## Environment:
 * HTML 5
 * JavaScript ES6
 * React 16.0.0
 * React DOM 16.0.0
 * jQuery UI 1.12.1
 
-## How to start:
+## How to Start:
 Open your terminal, change into any path and clone this repository:
 ```
 git clone repo_of_this_template
