@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FormList from './FormList'
 import './App.css';
 
 class App extends Component {
@@ -88,6 +89,8 @@ class App extends Component {
             </div>
           </div>
         </div>
+
+        <FormList isPreview={isPreview} list={list} deleteList={(index) => this.deleteList(index)}/>
       </div>
     );
   }
