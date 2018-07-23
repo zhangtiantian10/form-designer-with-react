@@ -7,7 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
       list: [],
-      isPreview: false
+      isPreview: false,
+      type: ''
     }
   }
 
@@ -22,19 +23,9 @@ class App extends Component {
   }
 
   addList = () => {
-    const text = this.refs.text
-    const date = this.refs.date
-    let item = ''
-    const {list} = this.state
-
-    if (text.checked) {
-      item = text.value;
-    } else if (date.checked) {
-      item = date.value;
-    }
-
-    if (item) {
-      list.push(item)
+    const {list, type} = this.state
+    if (type) {
+      list.push(type)
     }
 
     this.setState({
@@ -48,13 +39,16 @@ class App extends Component {
     })
   }
 
+  changeType = (e) => {
+    this.state.type = e.target.value
+  }
+
   render() {
     const {isPreview, list} = this.state
-    console.log(list)
     return (
       <div>
         <div className="center">
-          <button className="btn btn-primary" onClick={this.changePreview}>{isPreview ? 'Edit' : 'Preview'}</button>
+          <button className="btn btn-primary" id="changeButton" onClick={this.changePreview}>{isPreview ? 'Edit' : 'Preview'}</button>
           <button className={isPreview ? "hidden-button" : "btn btn-primary add-button"} data-toggle="modal" data-target="#selectModal">+</button>
         </div>
 
@@ -70,20 +64,20 @@ class App extends Component {
               </div>
               <div className="modal-body">
                 <div className="form-check">
-                  <input className="form-check-input" type="radio" name="inputType" id="textInput" value="text" ref="text"/>
-                    <label className="form-check-label" htmlFor="textInput">
+                  <input className="form-check-input" type="radio" name="inputType" id="textInput" value="text" ref="text" onClick={this.changeType}/>
+                    <label id="textLabel" className="form-check-label" htmlFor="textInput">
                       Text Input
                     </label>
                 </div>
                 <div className="form-check">
-                  <input className="form-check-input" type="radio" name="inputType" id="datePicker" value="date" ref="date"/>
-                    <label className="form-check-label" htmlFor="textInput">
+                  <input className="form-check-input" type="radio" name="inputType" id="datePicker" value="date" ref="date" onClick={this.changeType}/>
+                    <label className="form-check-label" htmlFor="datePicker">
                       Date Picker
                     </label>
                 </div>
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-primary" onClick={this.addList}>Add</button>
+                <button type="button" id="addButton" className="btn btn-primary" onClick={this.addList}>Add</button>
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
