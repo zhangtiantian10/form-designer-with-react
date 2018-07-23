@@ -9,7 +9,7 @@ class FormList extends React.Component {
             <input type={item} className="form-control"/>
           </div>
           <div className="col-md-2">
-            {this.props.isPreview ? '' : <button className="btn btn-danger" onClick={this.props.deleteList.bind(this, index)}>X</button>}
+            {this.props.isPreview ? '' : <button id={'delete' + index} className="btn btn-danger" onClick={(index) => this.props.deleteList(index)}>X</button>}
           </div>
         </div>
       })}

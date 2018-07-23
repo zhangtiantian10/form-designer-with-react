@@ -49,7 +49,7 @@ class App extends Component {
       <div>
         <div className="center">
           <button className="btn btn-primary" id="changeButton" onClick={this.changePreview}>{isPreview ? 'Edit' : 'Preview'}</button>
-          <button className={isPreview ? "hidden-button" : "btn btn-primary add-button"} data-toggle="modal" data-target="#selectModal">+</button>
+          {isPreview ? "" : <button id="add" className="btn btn-primary add-button" data-toggle="modal" data-target="#selectModal">+</button>}
         </div>
 
         <div className="modal fade" id="selectModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel"
