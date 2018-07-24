@@ -65,7 +65,7 @@ class App extends Component {
               <div className="modal-body">
                 <div className="form-check">
                   <input className="form-check-input" type="radio" name="inputType" id="textInput" value="text" ref="text" onClick={this.changeType}/>
-                    <label id="textLabel" className="form-check-label" htmlFor="textInput">
+                    <label className="form-check-label" htmlFor="textInput">
                       Text Input
                     </label>
                 </div>

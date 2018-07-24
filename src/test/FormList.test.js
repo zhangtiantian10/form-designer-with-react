@@ -1,6 +1,5 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
-import App from '../component/App';
 import FormList from '../component/FormList';
 import {shallow, configure} from 'enzyme';
 
